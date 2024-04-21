@@ -1,37 +1,44 @@
-# Routing Exercise
+# Controller Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with routing in Laravel, covering the registration of routes, routing parameters, and dynamic routes.
+The objective of this exercise is to gain practical experience with Laravel controllers, covering creating controllers, routing controllers, passing data to controllers, and using resources with controllers.
 
 ## Prerequisites
 
 - Basic knowledge of PHP and Laravel framework.
-- Familiarity with web development concepts.
+- Familiarity with routing concepts in Laravel.
 
 ## Task
 
-1. **Routes Registration**
+1. **Creating Controllers**
 
-   - Open your Laravel project in your preferred code editor.
-   - Navigate to the `routes` directory and open the `web.php` file.
-   - Register at least three routes using the `Route::get()` method:
-     - One route should point to a view or controller method to display a welcome message.
-     - One route should point to a view or controller method to display a contact form.
-     - One route should point to a view or controller method to display a list of products.
+   - Create a new controller named `WelcomeController`.
+   - Use the artisan command `php artisan make:controller WelcomeController` to generate the controller file.
+   - Implement a method within the controller named `index` to return a view displaying a welcome message.
 
-2. **Routing Parameters and Dynamic Routes**
-   - Register a dynamic route that accepts a parameter for a user's ID.
-   - Define a route that points to a controller method to display information about the user with the given ID.
-   - Test the dynamic route by visiting the URL with different user IDs and verifying that the correct user information is displayed.
+2. **Routing Controllers**
+
+   - Register a route that points to the `index` method of the `WelcomeController`.
+   - Use the route to access the welcome message view.
+
+3. **Passing Data**
+
+   - Modify the `WelcomeController` to accept a parameter in the `index` method.
+   - Pass the parameter value to the view and display it along with the welcome message.
+
+4. **Resources and Controllers**
+   - Create a resourceful controller named `ProductController` using the artisan command `php artisan make:controller ProductController --resource`.
+   - Implement the necessary methods (`index`, `create`, `store`, `show`, `edit`, `update`, `destroy`) within the `ProductController`.
+   - Define routes to route CRUD operations to the corresponding methods in the `ProductController`.
 
 ## Task Details
 
-- Implement each task in the `web.php` routes file.
-- Test each route to ensure it functions as expected.
-- You can use dummy data or mock views/controllers for testing.
+- Implement each task in the respective controller files (`WelcomeController.php`, `ProductController.php`) and `web.php` routes file.
+- Test each route and controller method to ensure they function as expected.
+- You can use mock data or dummy views for testing.
 
 ## Submission
 
-- After completing the exercise, submit your modified `web.php` routes file.
-- Provide comments or documentation within your code to explain the purpose of each route.
+- After completing the exercise, submit your modified controller files (`WelcomeController.php`, `ProductController.php`) and `web.php` routes file.
+- Provide comments or documentation within your code to explain the purpose of each controller method and route.
