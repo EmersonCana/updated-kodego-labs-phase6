@@ -1,44 +1,33 @@
-# Controller Exercise
+# Views Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with Laravel controllers, covering creating controllers, routing controllers, passing data to controllers, and using resources with controllers.
+The objective of this exercise is to gain practical experience with Laravel views, covering creating views, implementing custom methods within views, and passing data to views.
 
 ## Prerequisites
 
 - Basic knowledge of PHP and Laravel framework.
-- Familiarity with routing concepts in Laravel.
+- Familiarity with controllers and routing in Laravel.
 
 ## Task
 
-1. **Creating Controllers**
+1. **Creating Views and Custom Method**
 
-   - Create a new controller named `WelcomeController`.
-   - Use the artisan command `php artisan make:controller WelcomeController` to generate the controller file.
-   - Implement a method within the controller named `index` to return a view displaying a welcome message.
+   - Create a new view named `welcome.blade.php`.
+   - Inside the `welcome.blade.php` view, implement a custom method named `greet` that accepts a parameter and returns a personalized greeting message.
+   - Call the `greet` method within the view and display the greeting message.
 
-2. **Routing Controllers**
-
-   - Register a route that points to the `index` method of the `WelcomeController`.
-   - Use the route to access the welcome message view.
-
-3. **Passing Data**
-
-   - Modify the `WelcomeController` to accept a parameter in the `index` method.
-   - Pass the parameter value to the view and display it along with the welcome message.
-
-4. **Resources and Controllers**
-   - Create a resourceful controller named `ProductController` using the artisan command `php artisan make:controller ProductController --resource`.
-   - Implement the necessary methods (`index`, `create`, `store`, `show`, `edit`, `update`, `destroy`) within the `ProductController`.
-   - Define routes to route CRUD operations to the corresponding methods in the `ProductController`.
+2. **Passing Data to Views**
+   - Modify the `WelcomeController` to pass data to the `welcome.blade.php` view.
+   - Pass a name parameter to the view and display it using the custom `greet` method implemented in the view.
 
 ## Task Details
 
-- Implement each task in the respective controller files (`WelcomeController.php`, `ProductController.php`) and `web.php` routes file.
-- Test each route and controller method to ensure they function as expected.
-- You can use mock data or dummy views for testing.
+- Implement each task in the `welcome.blade.php` view file and the `WelcomeController.php` controller file.
+- Test the view and controller to ensure they function as expected.
+- You can use mock data or dummy values for testing.
 
 ## Submission
 
-- After completing the exercise, submit your modified controller files (`WelcomeController.php`, `ProductController.php`) and `web.php` routes file.
-- Provide comments or documentation within your code to explain the purpose of each controller method and route.
+- After completing the exercise, submit your modified `welcome.blade.php` view file and `WelcomeController.php` controller file.
+- Provide comments or documentation within your code to explain the purpose of each view and controller method.
