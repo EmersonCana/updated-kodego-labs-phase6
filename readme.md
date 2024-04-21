@@ -1,39 +1,38 @@
-# Validations Exercise
+# Client-Server Communication Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with data validations in Laravel, covering model validations, custom validations, and controller validations.
+The objective of this exercise is to gain practical experience with client-server communication in a Laravel-React application, covering client configuration, integrating React into Laravel, and handling validation messages and errors.
 
 ## Prerequisites
 
-- Basic knowledge of PHP and Laravel framework.
-- Familiarity with models, controllers, and form validation concepts in Laravel.
+- Basic knowledge of PHP, Laravel framework, and React.
+- Familiarity with setting up and configuring frontend and backend applications.
 
 ## Task
 
-1. **Model Validations**
+1. **Client Configuration**
 
-   - Add validation rules to the `Product` model to ensure that certain fields are required and meet specific validation criteria.
-   - Define validation rules for fields such as name, price, and description using Laravel's validation syntax.
+   - Set up a new React project using Create React App or another preferred method.
+   - Configure the React project to communicate with the Laravel backend.
 
-2. **Custom Validations**
+2. **Adding React to Laravel**
 
-   - Implement a custom validation rule to validate the uniqueness of the product name.
-   - Create a custom validation rule class that checks if the product name is unique in the database.
-   - Use the custom validation rule in the validation rules array of the `Product` model.
+   - Integrate the React frontend into the Laravel backend application.
+   - Ensure that the Laravel application serves the React frontend from the appropriate route (e.g., `/` or `/app`).
 
-3. **Controller Validations**
-   - Implement form validation in the controller methods for creating and updating products.
-   - Validate the input data received from form submissions using Laravel's built-in validation methods.
-   - Ensure that validation errors are appropriately handled and displayed to the user.
+3. **Validation Messages and Error Handling**
+   - Implement form validation in both the React frontend and Laravel backend.
+   - Configure validation messages to be displayed to users when form input fails validation.
+   - Implement error handling on the frontend to display server-side validation errors received from the Laravel backend.
 
 ## Task Details
 
-- Implement each task by adding validations to the `Product` model and corresponding controller methods.
-- Test each validation scenario to ensure that input data is validated correctly.
-- Use Laravel's validation error messages to provide meaningful feedback to users.
+- Set up the React project and integrate it into the Laravel backend according to the provided instructions.
+- Implement form validation logic in both the React frontend and Laravel backend.
+- Ensure that validation messages and error handling are working as expected on both the frontend and backend.
 
 ## Submission
 
-- After completing the exercise, submit your modified `Product` model file and controller file(s).
-- Provide comments or documentation within your code to explain the purpose of each validation rule and how it works.
+- After completing the exercise, submit your modified React project files and Laravel backend files.
+- Provide comments or documentation within your code to explain the configuration and implementation details.
