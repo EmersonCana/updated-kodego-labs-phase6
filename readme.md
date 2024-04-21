@@ -1,43 +1,34 @@
-# Eloquent Relationships Exercise
+# Serialization Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with Eloquent relationships in Laravel, covering defining associations between models, displaying associated data, deleting associated data, and using nested resource routing.
+The objective of this exercise is to gain practical experience with serialization in Laravel, covering model serialization and serializing associations.
 
 ## Prerequisites
 
 - Basic knowledge of PHP and Laravel framework.
-- Familiarity with Eloquent ORM and database relationships.
+- Familiarity with Eloquent ORM and relationships.
 
 ## Task
 
-1. **Eloquent Associations**
+1. **Model Serializer**
 
-   - Define Eloquent relationships between the `Product` and `Category` models:
-     - Each product belongs to a category.
-     - Each category has many products.
+   - Implement serialization for the `Product` model to transform model instances into JSON format.
+   - Define a custom serializer for the `Product` model that specifies which attributes to include or exclude in the JSON output.
+   - Use Laravel's built-in serialization methods or libraries such as Fractal to handle model serialization.
 
-2. **Displaying Associated Data**
-
-   - Implement functionality to display products associated with a specific category.
-   - Create a route that accepts a category ID and displays the products belonging to that category.
-
-3. **Deleting Associated Data**
-
-   - Implement functionality to delete a category and its associated products.
-   - Ensure that when a category is deleted, all associated products are also deleted.
-
-4. **Nested Resource Routing**
-   - Implement nested resource routing for products within categories.
-   - Define routes that allow accessing product-related actions within the context of a specific category.
+2. **Serializing Associations**
+   - Implement serialization for associated data between the `Product` and `Category` models.
+   - Serialize the relationship between products and categories to include category information when serializing products.
+   - Ensure that the JSON output includes category details for each product.
 
 ## Task Details
 
-- Implement each task by defining Eloquent relationships, creating routes, and implementing controller methods as instructed.
-- Test each functionality to ensure that associated data is displayed correctly and deleted when necessary.
-- Use Laravel's ORM methods and query builder to perform database operations.
+- Implement serialization for the `Product` model and associated data as instructed.
+- Test the serialization methods to ensure that model instances and associated data are serialized correctly.
+- You can use Laravel's built-in serialization methods or third-party libraries to handle serialization.
 
 ## Submission
 
-- After completing the exercise, submit your modified model files, route definitions, and controller methods.
-- Provide comments or documentation within your code to explain the purpose of each relationship and implementation detail.
+- After completing the exercise, submit your modified serialization methods for the `Product` model and associated data.
+- Provide comments or documentation within your code to explain the serialization process and any customization made.
